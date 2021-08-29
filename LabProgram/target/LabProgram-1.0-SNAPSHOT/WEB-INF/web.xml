@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>Mobile</param-name>
+        <param-value>One Plus</param-value>
+    </context-param>
+    <context-param>
+        <param-name>City</param-name>
+        <param-value>Banglore</param-value>
+    </context-param>
+    <context-param>
+        <param-name>USN</param-name>
+        <param-value>1RD19MCA08</param-value>
+    </context-param>
+    <context-param>
+        <param-name>NAME</param-name>
+        <param-value>SIDDHARTH SINGH RATHORE</param-value>
+    </context-param>
+        
+    <servlet>
+        <servlet-name>Lab5</servlet-name>
+        <servlet-class>Lab5</servlet-class>
+        <init-param>
+            <param-name>Mobile</param-name>
+            <param-value>One Plus 6T</param-value>
+        </init-param>
+        <init-param>
+            <param-name>City</param-name>
+            <param-value>Banglore</param-value>
+        </init-param>
+        
+    </servlet>
+    <servlet>
+        <servlet-name>Lab4</servlet-name>
+        <servlet-class>Lab4</servlet-class>
+        <init-param>
+                <param-name>username</param-name>
+                <param-value>siddharth</param-value>
+        </init-param>
+        <init-param>
+                <param-name>password</param-name>
+                <param-value>19961947</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Lab5</servlet-name>
+        <url-pattern>/Lab5</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Lab4</servlet-name>
+        <url-pattern>/Lab4</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
